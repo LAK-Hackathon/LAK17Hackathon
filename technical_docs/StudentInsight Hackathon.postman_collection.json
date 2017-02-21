@@ -1,0 +1,343 @@
+{
+	"id": "1a3e8269-4f64-1daf-faae-03e2318ca738",
+	"name": "StudentInsight Hackathon",
+	"description": "",
+	"order": [
+		"e18cfbf0-5456-e781-ced0-f7ff6753a2b5",
+		"1fbff884-9f65-6779-f11d-c2ec13d4b7fa",
+		"594295ab-fd9d-58d0-9856-e7fa70624261",
+		"e0426c7c-128f-6f08-d15c-c8569af381a7",
+		"a8f3e43c-18fc-6570-17ae-8536b12e6659",
+		"491f3812-ee32-74a0-1197-d4e5f486ed02",
+		"df7e0a6d-4476-720e-8d50-089a608ec81f",
+		"964bb37f-161a-27d6-0417-626d67cd5b9e",
+		"291bf217-e923-1117-354a-17d01ff50fa6"
+	],
+	"folders": [],
+	"timestamp": 1481127119481,
+	"owner": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "1fbff884-9f65-6779-f11d-c2ec13d4b7fa",
+			"headers": "Authorization: Basic {{token}}\n",
+			"url": "{{base}}/group_types?availableOnly=true",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1a3e8269-4f64-1daf-faae-03e2318ca738",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "group types",
+			"description": "Labels and prediction summaries for different types of group (e.g. faculty, department, course)",
+			"descriptionFormat": "html",
+			"time": 1481127454574,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "291bf217-e923-1117-354a-17d01ff50fa6",
+			"headers": "Authorization: Basic {{token}}\n",
+			"url": "{{base}}/ensembles",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1a3e8269-4f64-1daf-faae-03e2318ca738",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "ensembles",
+			"description": "Ensembles are the top unit of prediction. Contains the class labels and decision boundaries, name/description for the ensemble and a summary of the contents of the feature-sets which contribute to the ensemble.",
+			"descriptionFormat": "html",
+			"time": 1481130000260,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "491f3812-ee32-74a0-1197-d4e5f486ed02",
+			"headers": "Authorization: Basic {{token}}\n",
+			"url": "{{base}}/prediction_categories",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1a3e8269-4f64-1daf-faae-03e2318ca738",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "prediction_categories",
+			"description": "    ",
+			"descriptionFormat": "html",
+			"time": 1481129571603,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "594295ab-fd9d-58d0-9856-e7fa70624261",
+			"headers": "Authorization: Basic {{token}}\n",
+			"url": "{{base}}/groups",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1a3e8269-4f64-1daf-faae-03e2318ca738",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "groups",
+			"description": "Title, \"parent\" identifiers, nomogram (influence chart) results, and prediction summaries for all group types (e.g. course)",
+			"descriptionFormat": "html",
+			"time": 1481127697175,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "964bb37f-161a-27d6-0417-626d67cd5b9e",
+			"headers": "Authorization: Basic {{token}}\n",
+			"url": "{{base}}/feature_sets",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "1a3e8269-4f64-1daf-faae-03e2318ca738",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "archiveCurrentFiles",
+					"value": "true",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "training",
+					"value": "true",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "batchId",
+					"value": "101",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "batchCurrentFile",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "batchNumberOfFiles",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "dataSet",
+					"value": "56ebc75862b1820b00d9514f",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "feature_sets",
+			"description": "Label/name, columns and processing history for feature sets",
+			"descriptionFormat": "html",
+			"time": 1481129821325,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a8f3e43c-18fc-6570-17ae-8536b12e6659",
+			"headers": "Authorization: Basic {{token}}\n",
+			"url": "{{base}}/tags/user_summary",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1a3e8269-4f64-1daf-faae-03e2318ca738",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "tags summary",
+			"description": "    Summarise count of tags",
+			"descriptionFormat": "html",
+			"time": 1481129522128,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "df7e0a6d-4476-720e-8d50-089a608ec81f",
+			"headers": "Authorization: Basic {{token}}\n",
+			"url": "{{base}}/class_labels",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "1a3e8269-4f64-1daf-faae-03e2318ca738",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "archiveCurrentFiles",
+					"value": "true",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "training",
+					"value": "true",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "batchId",
+					"value": "101",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "batchCurrentFile",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "batchNumberOfFiles",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "dataSet",
+					"value": "56ebc75862b1820b00d9514f",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "class_labels",
+			"description": "Labels and decision boundaries for predictions",
+			"descriptionFormat": "html",
+			"time": 1481129666982,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e0426c7c-128f-6f08-d15c-c8569af381a7",
+			"headers": "Authorization: Basic {{token}}\n",
+			"url": "{{base}}/people",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1a3e8269-4f64-1daf-faae-03e2318ca738",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "people",
+			"description": "Students and their group memberships, custom attributes, and assigned tracking tags. Also predictions for each group membership and an overall risk summary.",
+			"descriptionFormat": "html",
+			"time": 1481128485233,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e18cfbf0-5456-e781-ced0-f7ff6753a2b5",
+			"headers": "Authorization: Basic {{token}}\n",
+			"url": "{{base}}/periods",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1a3e8269-4f64-1daf-faae-03e2318ca738",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "periods",
+			"description": "Periods are typically academic years.",
+			"descriptionFormat": "html",
+			"time": 1481127119481,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

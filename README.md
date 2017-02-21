@@ -5,12 +5,19 @@ There is also a [Hackathon website](https://lakhackathon.wordpress.com/).
 The repository for the [2016 LAK Hackathon](https://github.com/AlanMarkBerg/hack-at-lack16) may be of interest.
 
 ## Purpose of this Repository
-This is a free-for-all place to deposit anything created during the hackathon. The organisers will also use it to gather and disseminate information prior to the hackathon. If you are not a git user, find someone who is to help or show you how.
+This is a free-for-all place to deposit anything created during the hackathon. The organisers will also use it to gather and disseminate information prior to the hackathon. If you are not a git user, find someone who is to help or show you how to add files.
 
 If you are a git user wishing to contribute, please: fork, modify, push, and issue a pull request. Please supply a helpful message.
 
+## Using Issues and Projects
+We will be using the "Issues" tracker to gather ideas for challenges to work on during the hackathon. Use the label "challenge".
+
+Once working groups have formed, please use the "Projects" feature to brainstorm ideas about dealing with the challenge, and to organise priorities for action during the Hackathon.
+
 ## Structure of the Repository
-_To be created_
+* slides/ - copies of slide decks used in the introductory part of the Hackathon.
+* technical_docs/ - documentation etc for the technical infrastructure.
+* groups/ - a place where each working group can deposit outputs of any kind, from photographs of flipcharts to working code.
 
 ## Licence and Copyright
 Unless otherwise stated, all material in this repository is licenced under the Apache 2 license.
