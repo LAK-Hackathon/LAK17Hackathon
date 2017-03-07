@@ -7,7 +7,7 @@ The repository for the [2016 LAK Hackathon](https://github.com/AlanMarkBerg/hack
 ## Purpose of this Repository
 This is a free-for-all place to deposit anything created during the hackathon. The organisers will also use it to gather and disseminate information prior to the hackathon. If you are not a git user, find someone who is to help or show you how to add files.
 
-If you are a git user wishing to contribute, please: fork, modify, push, and issue a pull request. Please supply a helpful message.
+If you are a git user wishing to contribute, please either: a) create a branch, or b) fork. The master branch is protected; issue a pull request, supplying a helpful message.
 
 ## Using Issues and Projects
 We will be using the "Issues" tracker to gather ideas for challenges to work on during the hackathon. Use the label "challenge".
