@@ -10,7 +10,7 @@ Convention: {...} in a URL component, including the query string indicates where
 The Student Insight API allows all institution structure to be accessed through the API, including periods, groups, students, and users.
 
 
-### Authentication
+## Authentication
 
 All API requests must be authenticated, and the user must have a role with the permission to manage the desired resource, otherwise HTTP 401 code (Unauthorized) is returned.
 
@@ -22,9 +22,9 @@ Authorization: Basic YWRtaW46YWRtaW4=
 
 ## Endpoints
 
-#### Endpoint - periods
+### Endpoint - periods
 
-##### GET api/periods
+#### GET api/periods
 
 Returns a list of all periods, in reverse date order.
 
@@ -41,20 +41,20 @@ JSON
 ]
 ```
 
-#### Endpoint - group_types
+### Endpoint - group_types
 
-##### GET api/group_types
+#### GET api/group_types
 
 Retrieves a list of group types, ordered by *order*. The list may be filtered by the use of query string parameters:
 
 - **availableOnly**: set to true, to exclude unused group types
 - **authorizedGroupsOnly**: set to true, to include only groups explicitly assigned to the authenticated user
 
-##### GET api/group_types/{id}
+#### GET api/group_types/{id}
 
 Retrieve the details of a single specified group type. The Student Insight id must be used.
 
-##### GET api/group_types/id
+#### GET api/group_types/id
 
 Retrieve the details of a single group type, found from a database find built on the parameters included in the query. For example:
 
@@ -74,9 +74,9 @@ Retrieve the details of a single group type, found from a database find built on
 ```
 
 
-#### Endpoint - groups
+### Endpoint - groups
 
-##### GET api/groups
+#### GET api/groups
 
 Retrieves a list of groups. Filters may be applied, with the following query string parameters:
 
@@ -92,11 +92,12 @@ Retrieves a list of groups. Filters may be applied, with the following query str
 - **sortOrder**: *asc* or *desc*
 
 
-##### GET api/groups/{id}
+#### GET api/groups/{id}
 
 Retrieves a single group's data; either the Student Insight id or the group's external id may be used.
 
-##### GET api/groups/{id}/outcome_summary
+#### GET api/groups/{id}/outcome_summary
+_no data available in LAK Hackathon demo site_
 
 Required query string parameter:
 
@@ -131,11 +132,12 @@ Returns an analysis of outcomes of instances of the identified group, in the spe
 ]
 ```
 
-##### GET api/groups/{id}/nomogram/{feature set id}
+#### GET api/groups/{id}/nomogram/{feature set id}
+_no data available in LAK Hackathon demo site_
 
 Retrieves a group's nomogram data. The query string parameter *ensemble_group_type* must be specified, with the id of the relevant group type.
 
-##### GET api/groups/{id}/tags_summary
+#### GET api/groups/{id}/tags_summary
 
 Returns a list of tags assigned to people in the group:
 
@@ -153,9 +155,9 @@ Returns a list of tags assigned to people in the group:
 ]
 ```
 
-#### Endpoint - people
+### Endpoint - people
 
-##### GET api/people
+#### GET api/people
 
 Gets all people data; note that, without any filters, this will return a very large amount of data, and should be used with caution.
 
@@ -175,32 +177,34 @@ The following filters on the query-string can be used to return a limited set of
 - **tag** `GET api/people?tag={tag id}` returns people with the specified tag. The Student Insight tag id must be used.
 - **matchFeatures** `GET api/people?matchFeatures={json}` returns people with the specified feature value(s) in the prediction data; the json query must be in the canonical form `{"LEARN_DIF":"09"}`, and appropriately URL-encoded.
 
-##### GET api/people/{id}
+#### GET api/people/{id}
 
 Gets a single person's data; either the Student Insight id or the person's external id may be used.
 
-#### Endpoint - group_instances
+### Endpoint - group_instances
 
-##### GET api/group_instances/{id}
+#### GET api/group_instances/id
 
-Fetches the data for a specified single group instances. The instance's Student Insight id must be used.
-
-##### GET api/group_instances/id
-
-Fetches the data for a specified single group instances. The person's id and group's id must be specified; these may be the Student Insight id or the externalId of each. Example:
+Fetches the data for a specified single group instances. __Both the person's id and group's id must be specified__; these may be the Student Insight id or the externalId of each. Example:
 
 ```
 api/group_instances/id?person=12945646&group=mod2016genetics205
 ```
 
-##### GET /api/group_instances/{id}/past_predictions
+#### GET api/group_instances/{id}
+
+Fetches the data for a specified single group instances. The instance's Student Insight id must be used.
+
+
+#### GET /api/group_instances/{id}/past_predictions
 
 Fetches a list of past predictions for a specified single group instances. The instance's Student Insight id must be used.
 
 
-#### Endpoint - people responsible_for
+### Endpoint - people responsible_for
 
-##### GET api/tags/people/responsible_for/level_summary
+#### GET api/tags/people/responsible_for/level_summary
+__Data is corrupt in the LAK Hackathon demo site__
 
 Returns data prediction summaries (one per ensemble) for the students that the authenticated user is responsible for. This is used within the app to populate the dashboard screen.
 
@@ -239,9 +243,9 @@ Returns data prediction summaries (one per ensemble) for the students that the a
 }
 ```
 
-#### Endpoint - people_custom_filters
+### Endpoint - people_custom_filters
 
-##### GET api/configuration/people_custom_filters
+#### GET api/configuration/people_custom_filters
 
 Returns a list of custom attribute keys from the people collection; these are used in the app as available custom filters in any student listing.
 
@@ -259,9 +263,10 @@ Returns a list of custom attribute keys from the people collection; these are us
 ]
 ```
 
-#### Endpoint - people_custom_filters
+### Endpoint - groups_custom_filters
+__No data in LAK Hackathon demo site.__
 
-##### GET api/configuration/groups_custom_filters
+#### GET api/configuration/groups_custom_filters
 
 Returns a list of custom attribute keys from the groups collection; these are used in the app as available custom filters in any group listing.
 
@@ -277,9 +282,9 @@ Returns a list of custom attribute keys from the groups collection; these are us
 ]
 ```
 
-#### Endpoint - institution_level_summary
+### Endpoint - institution_level_summary
 
-##### GET api/institution_level_summary
+#### GET api/institution_level_summary
 
 Returns an institution-level prediction summary. This is used internally by the app to populate the dashboard screen.
 
@@ -351,9 +356,9 @@ Returns an institution-level prediction summary. This is used internally by the 
 }
 ```
 
-#### Endpoint - tags
+### Endpoint - tags
 
-##### GET api/tags/user_summary
+#### GET api/tags/user_summary
 
 Returns a list of tags for students that the authenticated user is responsible for and students in groups that the user is responsible for. This is used within the app to populate the dashboard screen.
 
@@ -375,33 +380,35 @@ Returns a list of tags for students that the authenticated user is responsible f
 ]
 ```
 
-#### Endpoint - prediction_categories
+### Endpoint - prediction_categories
 
-##### GET api/prediction_categories
+#### GET api/prediction_categories
 
 Returns a list of all prediction categories
 
-##### GET api/prediction_categories/{id}
+#### GET api/prediction_categories/{id}
 
 Retrieves a single prediction category
 
-#### Endpoint - prediction_model_types
+### Endpoint - prediction_model_types
 
-##### GET api/prediction_model_types
+#### GET api/prediction_model_types
 
 Returns a list of prediction model types.
 
-#### Endpoint - class_labels
+### Endpoint - class_labels
 
-##### GET api/class_labels
+#### GET api/class_labels
 
 Returns a list of class labels, including their prediction level data.
 
-#### Endpoint - data_sets
+### Endpoint - data_sets
 
-This is the data which Student Insight uses to make its predictions.
+This is the data which Student Insight uses to make its predictions. __For the LAK Hackathon demo site, this contains only the column headings.__
 
-##### GET api/data_sets
+See /ensembles for a generally more useful starting point.
+
+#### GET api/data_sets
 
 Returns a paginated list of data sets. Supported query string parameters are:
 
@@ -409,23 +416,15 @@ Returns a paginated list of data sets. Supported query string parameters are:
 - **page**: used in pagination
 - **ids**: if a list of data set ids is supplied, only these data sets are returned
 
-##### GET api/data_sets/{id}
+#### GET api/data_sets/{id}
 
 Returns details of the specified data set.
 
-##### GET api/data_sets/{id}/file_log
+### Endpoint - feature_sets
 
-Returns a paginated list of file upload events for the specified data set, most recent first.
+Feature sets may be used to join together datasets. See /ensembles for a generally more useful starting point.
 
-##### GET api/data_sets/{id}/columns/{column}
-
-Fetches the distinct values present in a named column. For example if the request is *api/data_sets/580740d0d79e2c6100f50d5b&#8203;/columns/learn_dif* the returned data may be `['1', '10', '19', '90', '98', '99']`
-
-#### Endpoint - feature_sets
-
-Feature sets may be used to join together datasets.
-
-##### GET api/feature_sets
+#### GET api/feature_sets
 
 Retrieves a list of feature sets. Supported query string parameters are:
 
@@ -433,29 +432,22 @@ Retrieves a list of feature sets. Supported query string parameters are:
 - **page**: used in pagination
 - **ids**: if a list of feature set ids is supplied, only these feature sets are returned
 
-##### GET api/feature_sets/{id}
+#### GET api/feature_sets/{id}
 
 Retrieves the detail of a single feature set
 
-#### Endpoint - ensembles
+### Endpoint - ensembles
 
 Ensembles bring together the predictions from several featuresets to give a combined indicator of risk.
 
-##### GET api/ensembles
+#### GET api/ensembles
 
 Returns a list of ensembles.
 
-##### GET api/ensembles/{ensemble id}
+#### GET api/ensembles/{ensemble id}
 
 Returns data about a single ensemble.
 
-##### GET api/ensembles/{ensemble id}/predictions/{prediction run id}
-
-Returns data about a prediction run
-
-##### GET api/ensembles/{ensemble id}/tests/{test run id}
-
-Returns data about a test run
 
 ## For the avoidance of doubt...
 

@@ -21,7 +21,7 @@ Student Insight is a learning analytics engine and dashboard application. The AP
 
 Site: [https://lak.studentinsight.tribalclouds.net](https://lak.studentinsight.tribalclouds.net), [API documentation](student_insight_api.md) (and Postman collection).
 
-Logins available from Adam Cooper.
+Three logins have been prepared for all registered participants. They take the form FirstnameLastnameXX, with hyphens removed from last-names, and where XX is "IA" (institutional administrator), "PT" (personal tutor), and "ML" (module leader). These can access the web application and the API. Each login has been associated with the email used on registration. Use the "First access" link on the login page to get a password reset email sent to this email address.
 
 ## ICTS – University of Amsterdam
 
