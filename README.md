@@ -12,7 +12,7 @@ If you are a git user wishing to contribute, please either: a) create a branch, 
 ## Using Issues and Projects
 We will be using the "Issues" tracker to gather ideas for challenges to work on during the hackathon. Use the label "challenge".
 
-Once working groups have formed, please use the "Projects" feature to brainstorm ideas about dealing with the challenge, and to organise priorities for action during the Hackathon.
+Once working groups have formed, please use the "Projects" feature to brainstorm ideas about dealing with the challenge, and to organise priorities for action during the Hackathon. You will need a GitHub login which has been added to the Participants team (talk to the organisers).
 
 ## Structure of the Repository
 * slides/ - copies of slide decks used in the introductory part of the Hackathon.
