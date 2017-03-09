@@ -17,11 +17,13 @@ Access to the API and code for the Jisc student app – Study Goal, allowing exp
 
 ## Tribal Student Insight
 
-Student Insight is a learning analytics engine and dashboard application. The API will allow access to information about students, their groups, and risk predictions.
+Student Insight is a learning analytics engine and dashboard application. The API will allow access to information about students, their groups, and risk predictions. The data is all artificially generated, based on attributes used in a pilot project. Please note that there are historical prediction values but the source data is missing from the demo site, also that the "influence chart" is not active.
 
 Site: [https://lak.studentinsight.tribalclouds.net](https://lak.studentinsight.tribalclouds.net), [API documentation](student_insight_api.md) (and Postman collection).
 
 Three logins have been prepared for all registered participants. They take the form FirstnameLastnameXX, with hyphens removed from last-names, and where XX is "IA" (institutional administrator), "PT" (personal tutor), and "ML" (module leader). These can access the web application and the API. Each login has been associated with the email used on registration. Use the "First access" link on the login page to get a password reset email sent to this email address.
+
+About the roles: IA - sees all data; PT - has a set of 10 personal tutees and sees no other predictions; ML - has access to predictions for students on three modules.
 
 ## ICTS – University of Amsterdam
 
