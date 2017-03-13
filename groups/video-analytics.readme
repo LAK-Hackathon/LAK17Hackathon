@@ -1,0 +1,17 @@
+
+Video Learning Analytics Resources for LAK17
+
+Spreadsheet comparing different video player support
+https://docs.google.com/spreadsheets/d/1TUoxUS9SCDZsCwyuLG4oqycseX78UBXhwYv8vu6rLlY/edit#gid=2073391235
+
+xAPI Video Profile Vocabulary
+https://w3id.org/xapi/video (human readable)
+http://xapi.vocab.pub/datasets/video.jsond (machine readable JSON-LD)
+
+
+IMS Caliper Metric Profile (Media)
+v1.0
+https://www.imsglobal.org/caliper/caliperv1p0/ims-caliper-analytics-implementation-guide#2.9
+
+v1.1 (private repo)
+https://github.com/IMSGlobal/caliper-spec/blob/master/caliper.md#mediaProfile
