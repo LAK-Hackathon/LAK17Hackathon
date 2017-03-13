@@ -5,7 +5,7 @@ _simply transcribed from the wordpress site_
 
 - Jisc's Learning Records Warehouse, which stores activity data in xAPI and student data in a standard format known as the [Universal Data Definitions (UDD)](https://github.com/jiscdev/analytics-udd). This is based on the HT2 Learning Locker open source product augmented to support Jisc UDD storage. You can read [an overview of Jisc's architecture](https://analytics.jiscinvolve.org/wp/2016/06/28/a-technical-look-into-learning-analytics-data-and-visualisations/), [HT2's Learning locker documentation](http://docs.learninglocker.net/statements_api/), and some [sample queries](https://github.com/jiscdev/learning-analytics/blob/master/xapi-aggregation.md). If you want to get started exploring our hackathon store, use the base URL for aggregation 
 
->> http://jisc.learninglocker.net/api/v1/statements/aggregate?pipeline=[]
+>> http://jiscv2.learninglocker.net/api/statements/aggregate?pipeline=[]
 
 >> and the read-only key details:
 
