@@ -1,0 +1,16 @@
+{
+  "actor": {
+    "name": "**USER**",
+    "mbox": "mailto:**USER**@LAK.example.com"
+  },
+  "verb": {
+    "id": "http://adlnet.gov/expapi/verbs/experienced",
+    "display": { "en-US": "**VERB**" }
+  },
+  "object": {
+    "id": "http://example.com/activities/**OBJECT**",
+    "definition": {
+      "name": { "en-US": "**OBJECT_DESCRIPTION**" }
+    }
+  }
+}
