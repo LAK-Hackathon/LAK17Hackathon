@@ -3,19 +3,21 @@
 ## Jisc
 _simply transcribed from the wordpress site_  
 
-- Jisc's Learning Records Warehouse, which stores activity data in xAPI and student data in a standard format known as the [Universal Data Definitions (UDD)](https://github.com/jiscdev/analytics-udd). This is based on the HT2 Learning Locker open source product augmented to support Jisc UDD storage. You can read [an overview of Jisc's architecture](https://analytics.jiscinvolve.org/wp/2016/06/28/a-technical-look-into-learning-analytics-data-and-visualisations/), [HT2's Learning locker documentation](http://docs.learninglocker.net/statements_api/), and some [sample queries](https://github.com/jiscdev/learning-analytics/blob/master/xapi-aggregation.md). If you want to get started exploring our hackathon store, use the base URL for aggregation 
+- Jisc's Learning Records Warehouse, which stores activity data in xAPI and student data in a standard format known as the [Universal Data Definitions (UDD)](https://github.com/jiscdev/analytics-udd). This is based on the HT2 Learning Locker open source product augmented to support Jisc UDD storage. You can read [an overview of Jisc's architecture](https://analytics.jiscinvolve.org/wp/2016/06/28/a-technical-look-into-learning-analytics-data-and-visualisations/), [HT2's Learning locker documentation](http://docs.learninglocker.net/statements_api/), and some [sample queries](https://github.com/jiscdev/learning-analytics/blob/master/xapi-aggregation.md). If you want to get started exploring our hackathon store, we have two. The base URL for aggregation is the same for both:
 
 >> http://jiscv2.learninglocker.net/api/statements/aggregate?pipeline=[]
 
->> and the read-only key details:
+>> For Jisc's dummy moodle activity dataset, use the following read-only key details:
+>> Key: 51f4a915717282662f88f3be5b895b41dd371c29
+>> Secret: 48cfbfc25d90ccd3ca34e7acf7c24eade41f6b9e
+>> Basic auth: NTFmNGE5MTU3MTcyODI2NjJmODhmM2JlNWI4OTViNDFkZDM3MWMyOTo0OGNmYmZjMjVkOTBjY2QzY2EzNGU3YWNmN2MyNGVhZGU0MWY2Yjll
 
+>> For working with the xAPI translator data use the following read-only key details:
 >> Key: 7d7bb0ec92cf3b98eb4b77c03fb64a92414d8d97
-
 >> Secret: 74a4242f4fa7ec52ce179814ca13e70fcf069589
-
 >> Basic auth: N2Q3YmIwZWM5MmNmM2I5OGViNGI3N2MwM2ZiNjRhOTI0MTRkOGQ5Nzo3NGE0MjQyZjRmYTdlYzUyY2UxNzk4MTRjYTEzZTcwZmNmMDY5NTg5
 
-- A sample data set uploaded to the above hackathon store including student data, VLE, attendance, and library use as well as sample predictions.  Whilst the data will be generated, it will follow a similar profile to the live data set.
+- Sample data sets uploaded to the above hackathon store including student data, VLE, attendance, and library use as well as sample predictions.  Whilst the data will be generated, it will follow a similar profile to the live data set.
 
 - Jisc’s Universal xAPI Translator, which allows data to be rapidly converted from text files into any xAPI profile, allowing easy testing of new recipes and profiles. You can upload JSON templates and tsv data to https://lakemitter.data.alpha.jisc.ac.uk/xapi using credentials supplied on the day, and they will be parsed, converted to xapi, and submitted to the hackathon store above.The xAPI Translator uses the hackathon store's write access key, which will also be available on request at the hackathon.
 
