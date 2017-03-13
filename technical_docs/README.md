@@ -3,17 +3,27 @@
 ## Jisc
 _simply transcribed from the wordpress site_  
 
-The Learning Records Warehouse, which stores activity data in xAPI and student data in a standard format known as the Universal Data Definitions (UDD). This is based on the HT2 Learning Locker open source product augmented to support Jisc UDD storage.
+- Jisc's Learning Records Warehouse, which stores activity data in xAPI and student data in a standard format known as the [Universal Data Definitions (UDD)](https://github.com/jiscdev/analytics-udd). This is based on the HT2 Learning Locker open source product augmented to support Jisc UDD storage. You can read [an overview of Jisc's architecture](https://analytics.jiscinvolve.org/wp/2016/06/28/a-technical-look-into-learning-analytics-data-and-visualisations/), [HT2's Learning locker documentation](http://docs.learninglocker.net/statements_api/), and some [sample queries](https://github.com/jiscdev/learning-analytics/blob/master/xapi-aggregation.md). If you want to get started exploring our hackathon store, use the base URL for aggregation 
 
-A sample data set including student data, VLE, attendance, and library use as well as sample predictions.  Whilst the data will be generated, it will follow a similar profile to the live data set.
+>> http://jisc.learninglocker.net/api/v1/statements/aggregate?pipeline=[]
 
-Analytics Labs – a secure desktop environment, allowing creation of visualizations using Tableau.
+>> and the read-only key details:
 
-Jisc’s Universal xAPI Translator, which allows data to be rapidly converted from text files into any xAPI profile, allowing easy testing of new recipes and profiles.
+>> Key: 7d7bb0ec92cf3b98eb4b77c03fb64a92414d8d97
 
-Sample xAPI aggregation code toolkit, showing how to aggregate xAPI and UDD data as the first step in producing visualizations.
+>> Secret: 74a4242f4fa7ec52ce179814ca13e70fcf069589
 
-Access to the API and code for the Jisc student app – Study Goal, allowing experimentation with student facing services.
+>> Basic auth: N2Q3YmIwZWM5MmNmM2I5OGViNGI3N2MwM2ZiNjRhOTI0MTRkOGQ5Nzo3NGE0MjQyZjRmYTdlYzUyY2UxNzk4MTRjYTEzZTcwZmNmMDY5NTg5
+
+- A sample data set uploaded to the above hackathon store including student data, VLE, attendance, and library use as well as sample predictions.  Whilst the data will be generated, it will follow a similar profile to the live data set.
+
+- Jisc’s Universal xAPI Translator, which allows data to be rapidly converted from text files into any xAPI profile, allowing easy testing of new recipes and profiles. You can upload JSON templates and tsv data to https://lakemitter.data.alpha.jisc.ac.uk/xapi using credentials supplied on the day, and they will be parsed, converted to xapi, and submitted to the hackathon store above.The xAPI Translator uses the hackathon store's write access key, which will also be available on request at the hackathon.
+
+- Analytics Labs – a secure desktop environment, allowing creation of visualizations using Tableau. Jisc has a limited number of licenses available, and so accounts can be created on demand on the day if required!
+
+- Sample xAPI aggregation code toolkit, showing how to aggregate xAPI and UDD data as the first step in producing visualizations.
+
+- Access to the API and code for the Jisc student app – Study Goal, allowing experimentation with student facing services.
 
 ## Tribal Student Insight
 
