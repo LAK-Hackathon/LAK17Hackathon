@@ -3,7 +3,8 @@
   "actor": {
     "objectType": "Agent",
     "account": {
-      "name": "**STUDENT_ID**"
+	"name": "**STUDENT_ID**",
+	"homePage": "**HOMEPAGE**"
     }
   },
   "timestamp":"**ACTIVITY_DATE_TIME**",
@@ -20,10 +21,10 @@
         }
     },
   "object": {
-    "objectType": "Video",
+    "objectType": "Activity",
     "id": "**VIDEO_URL**",
     "definition": {
-      "type": "http://xapi.jisc.ac.uk/types/video",
+	"type": "https://w3id.org/xapi/video/activity-type/video",
       "name": {
         "en": "**VIDEO_NAME**"
         },
