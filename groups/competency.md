@@ -3,13 +3,18 @@ Students and employers can not regularly document, assemble, or share their need
 
 # Problem Space Definition
 Exchanges: https://twitter.com/jeffgrann/status/841426522430824448
+
 Problem with resumes: https://twitter.com/jeffgrann/status/841431565280321536
+
 Circle of Distrust: https://twitter.com/jeffgrann/status/841427475276095493
 
 # Circle of Distrust Impact on Users
 College transfer - loses progress, no articulation agreements
+
 Fails to get job - reputation-based decision making, no extended transcript
+
 Job engagement - no way to document accomplishment from employer.
+
 Career change - can't demonstrate accomplishments with evidence
 
 # TOOL MOCKUP
