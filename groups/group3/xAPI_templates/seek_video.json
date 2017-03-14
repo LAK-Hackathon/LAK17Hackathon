@@ -15,7 +15,6 @@
         }
     },
     "result":{
-	"duration": "**DURATION**",
         "extensions": {
             "https://w3id.org/xapi/video/extensions/time-from" : "**FROM_DATE_TIME**",
 	    "https://w3id.org/xapi/video/extensions/time-to" : "**TO_DATE_TIME**"
