@@ -42,25 +42,28 @@ Career change - can't demonstrate accomplishments with evidence
 
 8. University administer search for para-data on students' utilized evidence.
 
+# Use Case Defintions
+#7 https://docs.google.com/document/d/1u1M8VVn4PlCZgw_WmOA083kmlMK3L8bMoTp5vibsXiU/edit
+
 # Competency Framework Story Spine
-Once upon a time... I enrolled in an Educational Psychology program to study how people use their knowledge
-and every day .. I read and read and I wrote and wrote
-until one day .. I graduated
-and because of that ... I applied for jobs
-and because of that ... I worked to communicate what I learned relative to what was expected
-and because of that ... I got frustrated
-until finally ... I decided we needed a better system
-and since that day ... I have joined with others to build a better ecosystem to connect education and employment
-and the moral of the story is ... students need help understanding their educational experience and in communicating it to others.
+*Once upon a time... I enrolled in an Educational Psychology program to study how people use their knowledge
+*and every day .. I read and read and I wrote and wrote
+*until one day .. I graduated
+*and because of that ... I applied for jobs
+*and because of that ... I worked to communicate what I learned relative to what was expected
+*and because of that ... I got frustrated
+*until finally ... I decided we needed a better system
+*and since that day ... I have joined with others to build a better ecosystem to connect education and employment
+*and the moral of the story is ... students need help understanding their educational experience and in communicating it to others.
 
 # Resources
-Disposable assessments: https://opencontent.org/blog/archives/4691
-Achievement Standards Network (ASN): http://asn.desire2learn.com/resources/D2725126
-Credentials Framework: http://connectingcredentials.org/framework/
-CEDS Rubric: https://ceds.ed.gov/connectReport.aspx?uid=503
-OpenBadges: https://openbadgespec.org/
-OpenBadge Assessment Extension: https://openbadgespec.org/extensions/
-Credential Engine's CTDL: http://credreg.net/
-ASN-to-CTDL frameworks: http://credreg.net/ctdl/frameworkschemahowto
-JSON-LD tutorial: https://www.youtube.com/watch?v=vioCbTo3C-4
-HR OpenStandards: http://www.hropenstandards.org/
+*Disposable assessments: https://opencontent.org/blog/archives/4691
+*Achievement Standards Network (ASN): http://asn.desire2learn.com/resources/D2725126
+*Credentials Framework: http://connectingcredentials.org/framework/
+*CEDS Rubric: https://ceds.ed.gov/connectReport.aspx?uid=503
+*OpenBadges: https://openbadgespec.org/
+*OpenBadge Assessment Extension: https://openbadgespec.org/extensions/
+*Credential Engine's CTDL: http://credreg.net/
+*ASN-to-CTDL frameworks: http://credreg.net/ctdl/frameworkschemahowto
+*JSON-LD tutorial: https://www.youtube.com/watch?v=vioCbTo3C-4
+*HR OpenStandards: http://www.hropenstandards.org/
